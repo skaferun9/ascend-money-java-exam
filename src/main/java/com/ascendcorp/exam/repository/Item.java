@@ -42,7 +42,7 @@ public class Item {
             count = callableStatement.getLong(2);
             connection.commit();
         } catch (Exception e) {
-            log.error("Error ccccc : " + e);
+            log.error("Error: " + e);
         } finally {
             try {
                 if (callableStatement != null) {
