@@ -17,7 +17,7 @@ public class Item {
     final static Logger log = Logger.getLogger(Item.class);
 
     @Autowired
-    private final DataSource dataSource;
+    private DataSource dataSource;
 
     @NonNull
     private final Environment environment;
