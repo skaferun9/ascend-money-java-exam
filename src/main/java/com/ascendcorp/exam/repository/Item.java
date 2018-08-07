@@ -16,12 +16,15 @@ public class Item {
 
     final static Logger log = Logger.getLogger(Item.class);
 
-    @NonNull
+    @Autowired
     private final DataSource dataSource;
 
+    @NonNull
+    private final Environment environment;
+
     @Autowired
-    public Item(DataSource dataSource) {
-        this.dataSource = dataSource;
+    public Item(Environment environment) {
+        this.environment = environment;
     }
 
     public Long countItem(Long type) {
