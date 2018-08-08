@@ -15,4 +15,6 @@ Rule:
 
 - You may use clean code technic and design pattern 
 
-- Test code should not be modified, and must be passed
+- Test code should not be modified
+
+- Test must always pass
