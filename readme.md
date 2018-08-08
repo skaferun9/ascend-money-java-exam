@@ -7,3 +7,12 @@ You are working for Software house company. You had assigned task for improving 
 
  - Class code for you to refactor: InquiryService.java
 
+
+
+Rule:
+
+- Source code able to chnage, create new, redesign
+
+- You may use clean code technic and design pattern 
+
+- Test code should not be modified, and must be passed
