@@ -1,4 +1,4 @@
-package com.ascendcorp.exam.service;
+package com.ascendcorp.exam.proxy;
 
 import com.ascendcorp.exam.model.TransferResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Date;
 
 
-public class BankService {
+public class BankProxyGateway {
 
     public TransferResponse requestTransfer(
             String transactionId, Date tranDateTime, String channel,

@@ -11,7 +11,7 @@ import java.util.Date;
 public class InquiryService {
 
     @Autowired
-    private BankService bankService;
+    private BankProxyGateway bankService;
 
     final static Logger log = Logger.getLogger(InquiryService.class);
 

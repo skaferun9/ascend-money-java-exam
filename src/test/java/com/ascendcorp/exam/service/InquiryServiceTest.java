@@ -2,9 +2,7 @@ package com.ascendcorp.exam.service;
 
 import com.ascendcorp.exam.model.InquiryServiceResultDTO;
 import com.ascendcorp.exam.model.TransferResponse;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -29,7 +27,7 @@ public class InquiryServiceTest {
     InquiryService inquiryService;
 
     @Mock
-    BankService bankService;
+    BankProxyGateway bankService;
 
     @Test
     public void should_return500_when_noRequireValue() throws SQLException {
