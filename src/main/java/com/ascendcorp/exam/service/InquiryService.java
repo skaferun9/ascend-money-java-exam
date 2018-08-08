@@ -2,6 +2,7 @@ package com.ascendcorp.exam.service;
 
 import com.ascendcorp.exam.model.InquiryServiceResultDTO;
 import com.ascendcorp.exam.model.TransferResponse;
+import com.ascendcorp.exam.proxy.BankProxyGateway;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -11,7 +12,7 @@ import java.util.Date;
 public class InquiryService {
 
     @Autowired
-    private BankProxyGateway bankService;
+    private BankProxyGateway bankProxyGateway;
 
     final static Logger log = Logger.getLogger(InquiryService.class);
 
@@ -57,7 +58,7 @@ public class InquiryService {
                 throw new NullPointerException("Amount must more than zero!");
             }
 
-            TransferResponse response = bankService.requestTransfer(transactionId, tranDateTime, channel,
+            TransferResponse response = bankProxyGateway.requestTransfer(transactionId, tranDateTime, channel,
                     bankCode, bankNumber, amount, reference1, reference2);
 
             log.info("2.4 begin get Inquiry Response");
