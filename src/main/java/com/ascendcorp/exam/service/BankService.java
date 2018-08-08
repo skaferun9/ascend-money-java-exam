@@ -8,8 +8,6 @@ import java.util.Date;
 
 public class BankService {
 
-
-
     public TransferResponse requestTransfer(
             String transactionId, Date tranDateTime, String channel,
             String bankCode, String bankNumber, double amount,

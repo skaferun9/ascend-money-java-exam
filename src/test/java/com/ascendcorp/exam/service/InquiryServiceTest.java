@@ -34,6 +34,7 @@ public class InquiryServiceTest {
     @Test
     public void should_return500_when_noRequireValue() throws SQLException {
 
+        // Transaction Id
         InquiryServiceResultDTO inquiry = inquiryService.inquiry(null, new Date(),
                 "Mobile", null,
                 "BANK1", "4321000", 100d, "rrivsffv234c",
@@ -43,6 +44,7 @@ public class InquiryServiceTest {
         assertEquals("500", inquiry.getReasonCode());
         assertEquals("General Invalid Data", inquiry.getReasonDesc());
 
+        // Datetime
         inquiry = inquiryService.inquiry("1234", null,
                 "Mobile", null,
                 "BANK1", "4321000", 100d, "rrivsffv234c",
@@ -52,6 +54,7 @@ public class InquiryServiceTest {
         assertEquals("500", inquiry.getReasonCode());
         assertEquals("General Invalid Data", inquiry.getReasonDesc());
 
+        // Channel
         inquiry = inquiryService.inquiry("1234", new Date(),
                 null, null,
                 "BANK1", "4321000", 100d, "rrivsffv234c",
@@ -61,6 +64,7 @@ public class InquiryServiceTest {
         assertEquals("500", inquiry.getReasonCode());
         assertEquals("General Invalid Data", inquiry.getReasonDesc());
 
+        // BankCode
         inquiry = inquiryService.inquiry("1234", new Date(),
                 "Mobile", null,
                 null, "4321000", 100d, "rrivsffv234c",
@@ -70,6 +74,7 @@ public class InquiryServiceTest {
         assertEquals("500", inquiry.getReasonCode());
         assertEquals("General Invalid Data", inquiry.getReasonDesc());
 
+        // BankNumber
         inquiry = inquiryService.inquiry("1234", new Date(),
                 "Mobile", null,
                 "BANK1", null, 100d, "rrivsffv234c",
@@ -79,6 +84,7 @@ public class InquiryServiceTest {
         assertEquals("500", inquiry.getReasonCode());
         assertEquals("General Invalid Data", inquiry.getReasonDesc());
 
+        // Amount
         inquiry = inquiryService.inquiry("1234", new Date(),
                 "Mobile", null,
                 "BANK1", "4321000", 0d, "rrivsffv234c",
