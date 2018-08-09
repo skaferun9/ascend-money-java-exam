@@ -17,7 +17,10 @@ The test codes had been done, so you can refactor, redesign and/or rewirte the c
 ## Instruction
 
 
-Do refactor class **InquiryService.java**
+1. Do refactor class **InquiryService.java**
+
+2. Write your test class, if you create new class.
+
 
 
 
