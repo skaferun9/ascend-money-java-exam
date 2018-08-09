@@ -13,7 +13,6 @@ public class BankProxyGateway {
             String bankCode, String bankNumber, double amount,
             String reference1, String reference2) {
 
-        //TODO call web service
         return new TransferResponse();
     }
 }
