@@ -32,10 +32,20 @@ Rules:
 - Test must always pass
 
 
-Bank API Response Code Data Dictionary:
+Data Dictionary for Bank Response Code:
 
-| Code        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Code        | Description           | |
+| ------------- |:-------------:| 
+| approved      | approved | 
+| invalid_data      | 100:1091:Data type is invalid.      |  
+| invalid_data | General error.     |
+| transaction_error |      |
+| transaction_error | Transaction error.     |
+| transaction_error | 100:1091:Transaction is error with code 1091.    |
+| transaction_error | 1092:Transaction is error with code 1092.    |
+| transaction_error | 98:Transaction is error with code 98.    |
+| unknown |    |
+| unknown | 5001:Unknown error code 5001   |
+| unknown | 5002:   |
+| unknown | General Invalid Data code 501   |
+| not_support |     Not Support |
