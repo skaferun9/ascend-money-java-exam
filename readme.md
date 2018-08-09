@@ -2,6 +2,8 @@
 
 
 
+
+
 You are working for Software house company. You had assigned task for improving legacy service. The service for inquiry information from bank by bank account. 
 The test codes had been done, so you can refactor, redesign and/or rewirte the code to support current test codes.
 
@@ -12,7 +14,7 @@ The test codes had been done, so you can refactor, redesign and/or rewirte the c
 
 
 
-Instruction: 
+## Instruction
 
 
 Refactor class InquiryService.java
@@ -21,7 +23,7 @@ Refactor class InquiryService.java
 
 
 
-Rules:
+## Rules
 
 - Source code able to chnage, add new class, redesign
 
@@ -32,10 +34,11 @@ Rules:
 - Test must always pass
 
 
-Data Dictionary for Bank Response Code:
+## Data Dictionary for Bank Response Code
+
 
 | Code        | Description           | |
-| ------------- |:-------------:| 
+| ------------- |-------------| 
 | approved      | approved | 
 | invalid_data      | 100:1091:Data type is invalid.      |  
 | invalid_data | General error.     |
