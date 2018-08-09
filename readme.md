@@ -8,16 +8,16 @@ You are working for Software house company. You had assigned task for improving 
 The test codes had been done, so you can refactor, redesign and/or rewirte the code to support current test codes.
 
 
- - Class test: InquiryServiceTest.java
+ - Class test: **InquiryServiceTest.java**
 
- - Class code: InquiryService.java
+ - Class code: **InquiryService.java**
 
 
 
 ## Instruction
 
 
-Refactor class InquiryService.java
+Do refactor class **InquiryService.java**
 
 
 
