@@ -25,7 +25,7 @@ Do refactor class **InquiryService.java**
 
 ## Rules
 
-- Source code able to chnage, add new class, redesign
+- Source code able to change, add new class, redesign
 
 - You may use clean code technic and design pattern 
 
