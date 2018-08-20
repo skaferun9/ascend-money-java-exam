@@ -19,7 +19,7 @@ The test codes had been done, so you can refactor, redesign and/or rewirte the c
 
 1. Do refactor class **InquiryService.java**
 
-2. Write your test class, if you create new class.
+2. Write unit test for testing all classes
 
 
 
@@ -32,9 +32,11 @@ The test codes had been done, so you can refactor, redesign and/or rewirte the c
 
 - You may use clean code technic and design pattern 
 
-- Test code should not be modified
-
 - Test must always pass
+
+- New class should have test cover
+
+
 
 
 ## Data Dictionary for Bank Response Code
