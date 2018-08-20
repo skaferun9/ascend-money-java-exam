@@ -13,6 +13,8 @@ The test codes had been done, so you can refactor, redesign and/or rewirte the c
  - Class code: **InquiryService.java**
 
 
+If you have any question, feel free to ask <sunpawet.som@ascendcorp.com>
+
 
 ## Instruction
 
