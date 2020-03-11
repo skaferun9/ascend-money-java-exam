@@ -19,7 +19,7 @@ If you have any question, feel free to ask <sunpawet.som@ascendcorp.com>
 ## Instruction
 
 
-1. Do refactor class **InquiryService.java**
+1. Do refactor class **InquiryService.java** , and make code to be a good quality.
 
 2. Write unit test for testing all classes
 
@@ -59,3 +59,12 @@ If you have any question, feel free to ask <sunpawet.som@ascendcorp.com>
 | unknown | 5002:   |
 | unknown | General Invalid Data code 501   |
 | not_support |     Not Support |
+
+
+
+## Require Skills
+- Java Programming
+- Spring Boot
+- JUnit
+- Unit Testing
+- Refactoring Code
