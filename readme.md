@@ -44,8 +44,8 @@ If you have any question, feel free to ask <sunpawet.som@ascendcorp.com>
 ## Data Dictionary for Bank Response Code
 
 
-| Code        | Description           | |
-| ------------- |-------------| 
+| Code        | Description           |  
+| ------------- |-------------|  
 | approved      | approved | 
 | invalid_data      | 100:1091:Data type is invalid.      |  
 | invalid_data | General error.     |
