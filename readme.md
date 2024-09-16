@@ -1,27 +1,25 @@
-# Exam
+# Exam Overview
 
 
 
 
 
-You are working for Software house company. You had assigned task for improving legacy service. The service for inquiry information from bank by bank account. 
-The test codes had been done, so you can refactor, redesign and/or rewirte the code to support current test codes.
+You are working for a software development company and have been assigned a task to improve a legacy service. This service is responsible for retrieving bank information based on a bank account number. The test code has already been written, so your goal is to refactor, redesign, and/or rewrite the service code to support the existing tests.
 
 
- - Class test: **InquiryServiceTest.java**
-
- - Class code: **InquiryService.java**
-
-
-If you have any question, feel free to ask <sunpawet.som@ascendcorp.com>
+ -  Test Class: **InquiryServiceTest.java**
+ -  Service Class: **InquiryService.java**
 
 
-## Instruction
+If you have any questions, feel free to contact  <sunpawet.som@ascendcorp.com>
 
 
-1. Do refactor class **InquiryService.java** , and make code to be a good quality.
+## Instructions
 
-2. Write unit test for testing all classes
+
+- Refactor the **InquiryService.java** class to improve code quality.
+- Ensure that the code follows good coding practices.
+- Write unit tests for all classes you modify or create.
 
 
 
@@ -30,15 +28,16 @@ If you have any question, feel free to ask <sunpawet.som@ascendcorp.com>
 
 ## Rules
 
-- Source code able to change, add new class, redesign
+1. You are allowed to modify the existing source code, add new classes, or redesign the solution.
+2. You should apply clean code techniques and appropriate design patterns.
+3. All tests must pass.
+4. Any new classes must have adequate test coverage.
 
-- You may use clean code technic and design pattern 
+## Submission Code
+You have two options for submitting your code:
 
-- Test must always pass
-
-- New class should have test cover
-
-
+1. Compress your code into a zip file and attach it to the interview invitation email.
+2. Fork the project into your own source code repository and send the repository link in response to the interview invitation email.
 
 
 ## Data Dictionary for Bank Response Code
