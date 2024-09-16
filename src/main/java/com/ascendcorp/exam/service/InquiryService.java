@@ -5,8 +5,8 @@ import com.ascendcorp.exam.model.TransferResponse;
 import com.ascendcorp.exam.proxy.BankProxyGateway;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.server.WebServerException;
 
-import javax.xml.ws.WebServiceException;
 import java.util.Date;
 
 public class InquiryService {
@@ -192,7 +192,7 @@ public class InquiryService {
                 respDTO.setReasonCode("500");
                 respDTO.setReasonDesc("General Invalid Data");
             }
-        }catch(WebServiceException r)
+        }catch(WebServerException r)
         {
             // handle error from bank web service
             String faultString = r.getMessage();
