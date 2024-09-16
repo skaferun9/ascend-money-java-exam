@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.web.server.WebServerException;
 
-import javax.xml.ws.WebServiceException;
 import java.sql.SQLException;
 import java.util.Date;
 
@@ -385,7 +385,7 @@ public class InquiryServiceTest {
     public void should_return503_when_throwWebServiceException() throws SQLException {
 
         when(bankProxyGateway.requestTransfer(anyString(),any(),anyString(),anyString(),anyString(),
-                anyDouble(),anyString(),anyString())).thenThrow(WebServiceException.class);
+                anyDouble(),anyString(),anyString())).thenThrow(WebServerException.class);
 
         InquiryServiceResultDTO inquiry = inquiryService.inquiry("123456", new Date(),
                 "Mobile", null,
@@ -400,7 +400,7 @@ public class InquiryServiceTest {
     @Test
     public void should_return503_when_socketTimeout() throws SQLException {
 
-        WebServiceException ex = new WebServiceException("java.net.SocketTimeoutException error");
+        WebServerException ex = new WebServerException("java.net.SocketTimeoutException error", null);
 
         when(bankProxyGateway.requestTransfer(anyString(),any(),anyString(),anyString(),anyString(),
                 anyDouble(),anyString(),anyString())).thenThrow(ex);
@@ -418,7 +418,7 @@ public class InquiryServiceTest {
     @Test
     public void should_return503_when_connectionTimeout() throws SQLException {
 
-        WebServiceException ex = new WebServiceException("Server Connection timed out");
+        WebServerException ex = new WebServerException("Server Connection timed out", null);
 
         when(bankProxyGateway.requestTransfer(anyString(),any(),anyString(),anyString(),anyString(),
                 anyDouble(),anyString(),anyString())).thenThrow(ex);
