@@ -22,7 +22,17 @@ If you have any questions, feel free to contact  <sunpawet.som@ascendcorp.com>
 - Write unit tests for all classes you modify or create.
 
 
+## How to Check Unit Test
 
+To make sure all test cases pass.
+
+```
+
+
+    mvn clean test
+
+
+```
 
 
 
