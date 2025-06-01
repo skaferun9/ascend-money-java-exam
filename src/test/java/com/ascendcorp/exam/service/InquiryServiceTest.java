@@ -18,7 +18,6 @@ import static junit.framework.TestCase.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyDouble;
 import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -29,6 +28,7 @@ public class InquiryServiceTest {
 
     @Mock
     BankProxyGateway bankProxyGateway;
+
 
     @Test
     public void should_return500_when_noRequireValue() throws SQLException {
