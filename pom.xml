@@ -57,18 +57,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Explicit Logback dependencies (optional, Spring Boot includes by default) -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-            <version>1.4.11</version>
-        </dependency>
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-core</artifactId>
-            <version>1.4.11</version>
-        </dependency>
-
         <!-- Unit Testing Dependencies -->
         <dependency>
             <groupId>junit</groupId>
